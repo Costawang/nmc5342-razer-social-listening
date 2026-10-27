@@ -1,0 +1,56 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache/
+
+# Local configuration, credentials, and secrets
+.env
+.env.*
+secrets/
+credentials/
+credentials.json
+service-account*.json
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.aws/
+
+# Editor, operating system, and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+~$*
+.DS_Store
+Thumbs.db
+
+# Temporary analyses and model artifacts
+work/
+tmp/
+temp/
+outputs/
+model_outputs/
+models/
+checkpoints/
+wandb/
+
+# Exactly the four intended research data files
+/dataset/*
+!/dataset/razer_report_2026-09-24_04.52 (1).xlsx
+!/dataset/razer_mentions_content_nonempty.csv
+!/dataset/stage2/
+/dataset/stage2/*
+!/dataset/stage2/razer_stage2_all_with_labels.csv
+!/dataset/stage_final/
+/dataset/stage_final/*
+!/dataset/stage_final/razer_stage_final.csv
